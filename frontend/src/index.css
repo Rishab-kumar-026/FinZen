@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .text-gradient {
+  @apply bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent;
+} 
+
+.btn-primary {
+  @apply bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply bg-white text-primary-500 border-2 border-white hover:bg-white/10 px-6 py-3 rounded-xl font-semibold transition-all duration-300;
+}
+
+.card-hover {
+  @apply hover:border-primary-500 hover:shadow-xl;
+} */
+
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+@keyframes slide-up {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out;
+}
+
+@layer utilities {
+  .animation-delay-0 { animation-delay: 0s; }
+  .animation-delay-1 { animation-delay: 1s; }
+  .animation-delay-2 { animation-delay: 2s; }
+  .animation-delay-3 { animation-delay: 3s; }
+  .animation-delay-4 { animation-delay: 4s; }
+  .animation-delay-5 { animation-delay: 5s; }
+  .animation-delay-6 { animation-delay: 6s; }
+  .animation-delay-7 { animation-delay: 7s; }
+  .animation-delay-8 { animation-delay: 8s; }
+  .animation-delay-9 { animation-delay: 9s; }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbars globally */
+body, html, * {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+body::-webkit-scrollbar, html::-webkit-scrollbar, *::-webkit-scrollbar {
+  display: none;
+}
+
+
+
