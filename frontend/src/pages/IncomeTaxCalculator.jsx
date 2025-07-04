@@ -3,12 +3,13 @@ import { FaRupeeSign } from 'react-icons/fa';
 import BubbleBackground from './BubbleBackground';
 
 const taxSlabs = [
-  { min: 0, max: 300000, rate: 0 },
-  { min: 300001, max: 600000, rate: 0.05 },
-  { min: 600001, max: 900000, rate: 0.10 },
-  { min: 900001, max: 1200000, rate: 0.15 },
-  { min: 1200001, max: 1500000, rate: 0.20 },
-  { min: 1500001, max: Infinity, rate: 0.30 },
+  { min: 0, max: 400000, rate: 0 },
+  { min: 400001, max: 800000, rate: 0.05 },
+  { min: 800001, max: 1200000, rate: 0.10 },
+  { min: 1200001, max: 1600000, rate: 0.15 },
+  { min: 1600001, max: 2000000, rate: 0.20 },
+  { min: 2000001, max: 2400000, rate: 0.25 },
+  { min: 2400001, max: Infinity, rate: 0.30 },
 ];
 
 const articles = [
@@ -93,13 +94,13 @@ const IncomeTaxCalculator = () => {
     <div className="relative min-h-screen w-full h-auto pb-6 bg-gradient-to-br from-[#e0e7ff] to-[#f0f4ff] dark:from-gray-900 dark:to-gray-800 overflow-x-hidden flex items-center justify-center">
       <BubbleBackground />
       {/* HERO SECTION */}
-      <section className="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl mx-auto px-2 sm:px-4 gap-4 md:gap-12 relative z-10 min-h-[80vh] md:min-h-[90vh] h-auto w-full min-w-0 pt-24">
+      <section className="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl mx-auto px-4 md:px-0 gap-4 md:gap-12 relative z-10 min-h-[80vh] md:min-h-[90vh] h-auto w-full min-w-0 pt-24">
         {/* Input Form */}
         <form
           onSubmit={handleCalculate}
           className="flex-1 bg-white/80 dark:bg-gray-900/80 rounded-2xl shadow-lg p-4 md:p-8 flex flex-col gap-6 w-full min-w-0 animate-fade-in-up break-words max-w-md"
         >
-          <h1 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#1db954] to-[#1e90ff] text-transparent bg-clip-text mb-4">Income Tax Calculator (FY 2023-24)</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#1db954] to-[#1e90ff] text-transparent bg-clip-text mb-4">Income Tax Calculator (FY 2025-26)</h1>
           <label className="font-semibold text-gray-700 dark:text-gray-200">Enter your Annual Income (in LPA)</label>
           <input
             type="number"
@@ -149,7 +150,7 @@ const IncomeTaxCalculator = () => {
               <div className="text-lg text-gray-500 mb-2">Enter your income and calculate to see your tax.</div>
             )}
             <div className="text-sm text-gray-600 dark:text-gray-300 mt-2">
-              <span className="font-semibold">Regime:</span> New Regime (FY 2023-24)
+              <span className="font-semibold">Regime:</span> New Regime (FY 2025-26)
             </div>
             <div className="mt-4 overflow-x-auto w-full">
               <table className="w-full min-w-[340px] text-xs text-left text-gray-700 dark:text-gray-300 border-collapse">
@@ -161,27 +162,31 @@ const IncomeTaxCalculator = () => {
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-200 dark:border-gray-700">
-                    <td className="px-2 py-1">0 – 3,00,000</td>
+                    <td className="px-2 py-1">0 – 4,00,000</td>
                     <td className="px-2 py-1">0%</td>
                   </tr>
                   <tr className="border-b border-gray-200 dark:border-gray-700">
-                    <td className="px-2 py-1">3,00,001 – 6,00,000</td>
+                    <td className="px-2 py-1">4,00,001 – 8,00,000</td>
                     <td className="px-2 py-1">5%</td>
                   </tr>
                   <tr className="border-b border-gray-200 dark:border-gray-700">
-                    <td className="px-2 py-1">6,00,001 – 9,00,000</td>
+                    <td className="px-2 py-1">8,00,001 – 12,00,000</td>
                     <td className="px-2 py-1">10%</td>
                   </tr>
                   <tr className="border-b border-gray-200 dark:border-gray-700">
-                    <td className="px-2 py-1">9,00,001 – 12,00,000</td>
+                    <td className="px-2 py-1">12,00,001 – 16,00,000</td>
                     <td className="px-2 py-1">15%</td>
                   </tr>
                   <tr className="border-b border-gray-200 dark:border-gray-700">
-                    <td className="px-2 py-1">12,00,001 – 15,00,000</td>
+                    <td className="px-2 py-1">16,00,001 – 20,00,000</td>
                     <td className="px-2 py-1">20%</td>
                   </tr>
+                  <tr className="border-b border-gray-200 dark:border-gray-700">
+                    <td className="px-2 py-1">20,00,001 – 24,00,000</td>
+                    <td className="px-2 py-1">25%</td>
+                  </tr>
                   <tr>
-                    <td className="px-2 py-1">15,00,001+</td>
+                    <td className="px-2 py-1">24,00,001+</td>
                     <td className="px-2 py-1">30%</td>
                   </tr>
                 </tbody>

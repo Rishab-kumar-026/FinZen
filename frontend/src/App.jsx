@@ -1,4 +1,3 @@
-import { Toaster } from 'react-hot-toast';
 import { Routes, Route, useLocation } from "react-router-dom";  
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import Landing from './pages/Landing';
@@ -20,6 +19,9 @@ import { useState, useEffect } from 'react';
 import Navbar from './components/common/Navbar';
 import IncomeTaxCalculator from './pages/IncomeTaxCalculator';
 import LoanEstimator from './pages/LoanEstimator';
+import LimitBudget from './pages/LimitBudget';
+import { CategoryProgressProvider } from './context/CategoryProgressContext';
+import SetGoals from './pages/SetGoals';
 // ...
 
 
@@ -102,6 +104,7 @@ function AnimatedRoutes() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/dashboard/settings" element={<Settings />} />
         <Route path="/notifications" element={<Notifications />} />
+        <Route path="/limit-budget" element={<LimitBudget />} />
         <Route path="/dashboard/spending-coach" element={<SpendingCoachPage />} />
         <Route path="/dashboard/micro-investor" element={<MicroInvestorGuidePage />} />
         <Route path="/dashboard/loan-eligibility" element={<LoanEligibilityPage />} />
@@ -109,6 +112,7 @@ function AnimatedRoutes() {
         <Route path="/onboarding" element={<Onboarding />} />
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/explore/loan-estimator" element={<LoanEstimator />} />
+        <Route path="/set-goals" element={<SetGoals />} />
       </Routes>
     </AnimatePresence>
   );
@@ -144,7 +148,6 @@ function AppContent() {
   return (
     <>
       <Navbar />
-      <Toaster position="top-center" />
       {showOnboarding && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
           <div className="w-full max-w-2xl mx-auto">
@@ -158,7 +161,11 @@ function AppContent() {
 }
 
 function App() {
-  return <AppContent />;
+  return (
+    <CategoryProgressProvider>
+      <AppContent />
+    </CategoryProgressProvider>
+  );
 }
 
 export default App;

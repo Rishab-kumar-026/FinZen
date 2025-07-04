@@ -18,7 +18,7 @@ const courses = [
   {
     title: 'Investing for Beginners',
     description: 'Learn how to start investing in stocks, bonds, and more with confidence and clarity. Build your investment portfolio step by step and understand the risks and rewards of different asset classes...more',
-    image: COURSE_IMAGE_URL,
+    image: 'https://i.pinimg.com/736x/51/0f/97/510f97be2a013d3b1bf7792fefe88005.jpg',
     platform: 'Udemy',
     rating: 4.7,
     timeline: '4 weeks | Self-paced',
@@ -27,7 +27,7 @@ const courses = [
   {
     title: 'Mutual Funds Made Easy',
     description: 'Understand mutual funds, SIPs, and portfolio diversification for long-term growth. Make informed investment decisions and learn how to select the right funds for your goals...more',
-    image: COURSE_IMAGE_URL,
+    image:'https://i.pinimg.com/736x/ca/95/8c/ca958ce6a90cf08ac758e7caf70ffda7.jpg',
     platform: 'edX',
     rating: 4.6,
     timeline: '5 weeks | Self-paced',
@@ -36,7 +36,7 @@ const courses = [
   {
     title: 'Budgeting for Success',
     description: 'Create and manage budgets to achieve your financial goals and reduce stress. Learn proven techniques to track expenses, set savings targets, and stick to your plan...more',
-    image: COURSE_IMAGE_URL,
+    image:'https://i.pinimg.com/736x/e3/40/71/e34071c64be9ad7f68d979d32d918cde.jpg',
     platform: 'Skillshare',
     rating: 4.5,
     timeline: '3 weeks | Self-paced',
@@ -45,7 +45,7 @@ const courses = [
   {
     title: 'Tax Planning Basics',
     description: 'Learn tax-saving strategies and optimize your returns with smart planning. Discover deductions, credits, and filing tips to keep more of your money each year...more',
-    image: COURSE_IMAGE_URL,
+    image:'https://i.pinimg.com/736x/a0/db/9a/a0db9aabda63ac4c9da21aba1854ebfb.jpg',
     platform: 'Coursera',
     rating: 4.4,
     timeline: '2 weeks | Self-paced',
@@ -54,7 +54,7 @@ const courses = [
   {
     title: 'Credit & Loans Demystified',
     description: 'Understand credit scores, loans, and responsible borrowing for a healthy credit life. Learn how to improve your credit and choose the best loan options...more',
-    image: COURSE_IMAGE_URL,
+    image: 'https://i.pinimg.com/736x/9e/0f/08/9e0f08614a91170ebd5328de7ce0b1d3.jpg',
     platform: 'Udemy',
     rating: 4.7,
     timeline: '4 weeks | Self-paced',
@@ -63,7 +63,7 @@ const courses = [
   {
     title: 'Retirement Planning',
     description: 'Plan for a secure and comfortable retirement with expert-backed strategies. Explore retirement accounts, investment options, and withdrawal plans for peace of mind...more',
-    image: COURSE_IMAGE_URL,
+    image: 'https://i.pinimg.com/736x/07/ea/ec/07eaec5535af71bae6f55c1fb181a674.jpg',
     platform: 'edX',
     rating: 4.9,
     timeline: '5 weeks | Self-paced',
@@ -72,7 +72,7 @@ const courses = [
   {
     title: 'Insurance Essentials',
     description: 'Protect yourself and your family with the right insurance policies and knowledge. Learn about health, life, and property insurance to safeguard your future...more',
-    image: COURSE_IMAGE_URL,
+    image: 'https://i.pinimg.com/736x/de/1d/e4/de1de48bc3840534ef9ed53b589f0c43.jpg', 
     platform: 'Skillshare',
     rating: 4.5,
     timeline: '2 weeks | Self-paced',
@@ -81,7 +81,7 @@ const courses = [
   {
     title: 'Stock Market for Beginners',
     description: 'Start investing in stocks with confidence and foundational knowledge. Learn how the stock market works and how to pick your first stocks...more',
-    image: COURSE_IMAGE_URL,
+    image: 'https://i.pinimg.com/736x/ed/6a/56/ed6a56583de5e61fd49c2c9c07baa4f2.jpg',
     platform: 'Coursera',
     rating: 4.6,
     timeline: '6 weeks | Self-paced',

@@ -108,7 +108,7 @@ const LoanEstimator = () => {
   return (
     <div className="relative min-h-screen w-full bg-gradient-to-br from-[#e0e7ff] to-[#f0f4ff] dark:from-gray-900 dark:to-gray-800 overflow-x-hidden flex items-center justify-center">
       <BubbleBackground />
-      <section className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl mx-auto px-2 sm:px-4 gap-4 md:gap-12 relative z-10 min-h-screen pt-20 md:pt-32 pb-16 hide-scrollbar w-full min-w-0">
+      <section className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl mx-auto px-4 md:px-0 gap-4 md:gap-12 relative z-10 min-h-screen pt-20 md:pt-32 pb-16 hide-scrollbar w-full min-w-0">
         {/* Left: Form */}
         <form
           onSubmit={handleCheckEligibility}

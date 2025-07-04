@@ -45,7 +45,7 @@ const testimonials = [
 
 const TestimonialSection = () => {
   return (
-    <section className="relative py-20 md:py-28 bg-[#0a0f1c] text-white font-sans overflow-hidden">
+    <section className="relative py-20 md:py-28 bg-[#0a0f1c] text-white font-sans overflow-hidden px-4 md:px-0">
       <div className="max-w-3xl mx-auto text-center mb-12 px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#1db954] to-[#1e90ff] text-transparent bg-clip-text">
           Loved by the FinZen Community
@@ -53,7 +53,7 @@ const TestimonialSection = () => {
 
       </div>
       {/* Scrollable Testimonials */}
-      <div className="overflow-x-auto scrollbar-hide ">
+      <div className="overflow-x-auto scrollbar-hide px-1 sm:px-2 md:px-0">
         <div className="max-w-7xl mx-auto flex justify-center">
           <div className="flex gap-8 md:gap-10 lg:gap-12 w-full mx-auto snap-x snap-mandatory overflow-x-auto" style={{ maxWidth: '100%', overflowX: 'auto', scrollSnapType: 'x mandatory' }}>
             {testimonials.map((t, i) => (

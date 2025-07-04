@@ -75,7 +75,7 @@ const Navbar = () => {
     { label: "Home", to: "/" },
     { label: "Explore", to: "/explore/spending-coach", dropdown: true },
     { label: "Dashboard", to: "/dashboard" },
-    { label: "AI Chatbot", to: "/chatbot" },
+    { label: "Set Goals", to: "/set-goals" },
   ];
 
   // Dropdown for Explore
@@ -84,6 +84,8 @@ const Navbar = () => {
     { label: "Loan Estimator", to: "/explore/loan-estimator" },
     { label: "Income Tax Calculator", to: "/explore/income-tax-calculator" },
     { label: "Learning", to: "/explore/learning" },
+    { label: "Limit Budget", to: "/limit-budget" },
+    { label: "Notifications", to: "/notifications" },
   ];
 
   // Responsive: Hamburger menu for mobile
